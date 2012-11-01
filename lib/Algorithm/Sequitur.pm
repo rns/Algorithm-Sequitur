@@ -339,7 +339,7 @@ sub hashCode{
     return "$self->{value}/$self->{n}->{value}";
     # Values in linear combination with two
     # prime numbers. see Knuth :) 
-# FIXME? ensure that $ code is long enough like C's and Java's long to use numeric keys
+# FIXME? ensure that $code is long enough like C's and Java's long to use numeric keys
     $code = 21599 * $self->{value} + 20507 * $self->{n}->{value};
     $code = $code % $prime;
     $DEBUG && print $LOG "symbol::hashCode: for ",$self->{value},"/",$self->{n}->{value}," = ",$code,"\n";
