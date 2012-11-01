@@ -32,6 +32,7 @@ my %class_map = (
 );
 
 package Algorithm::Sequitur::Rule;
+# ABSTRACT: Perl port of Sequitur algorithm
 
 sub new{
     my $class = shift;
