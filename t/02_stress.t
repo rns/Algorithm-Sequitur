@@ -25,7 +25,7 @@ Usage  Rule
  2  R12 -> R13 R13 
  2  R13 -> R14 R14 
  2  R14 -> R15 R15 
- 2  R15 -> R2 y z 
+ 2  R15 -> R2 y z
 EOR
 
 my $s = Algorithm::Sequitur->new;
@@ -35,5 +35,6 @@ $s->build(\@text);
 
 my $rules = $s->first_rule->getRules;
 $rules =~ s/\t/  /g;
+chomp $result;
 is $rules, $result, "The generated grammar is correct";
 
