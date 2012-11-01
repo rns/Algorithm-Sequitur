@@ -114,7 +114,7 @@ sub getRules{
                 $text .= '_';
             }
             elsif ($sym->{value} eq "\n"){
-                $text .= "\n";
+                $text .= "\\n";
             }
             else{
                 $text .= $sym->{value};
@@ -124,6 +124,7 @@ sub getRules{
         $text .= "\n";
         $processedRules++;
     }
+    $text =~ s/\s+$//s;
     return $text;
 }
 
