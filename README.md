@@ -1,18 +1,16 @@
-[Sequitur](http://sequitur.info/) is a [linear-time algorithm identifying hierarchical structure in sequences](http://sequitur.info/jair/).
+[Sequitur](http://sequitur.info/) is a [linear-time algorithm identifying hierarchical structure in sequences](http://sequitur.info/jair/), for example:
 
-	Example: 
+Sequence: 
 
-		Sequence: 
+	abcabdabcabd\n
 
-  		abcabdabcabd\n
+Grammar:
 
-		Grammar:
-
-			Rule                 Expansion
-			----------------     ---------
-			S -> 0 -> 1 1 \n                                       
-			1 -> 2 c 2 d         abcabd
-			2 -> a b             ab
+	Rule                 Expansion
+	----------------     ---------
+	S -> 0 -> 1 1 \n                                       
+	1 -> 2 c 2 d         abcabd
+	2 -> a b             ab
 
 Sequitur is implemented in [Java](http://sequitur.info/java/), [C++](http://code.google.com/p/sequitur/).
 
