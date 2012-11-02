@@ -507,8 +507,6 @@ sub new{
     bless $self, $class;
 }
 
-sub str{ $_[0]->{STR} }
-
 use overload 
     "0+" => sub { $_[0]->key },
     "\"\"" => sub { $_[0]->key },
