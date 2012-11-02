@@ -503,20 +503,17 @@ package Algorithm::Sequitur::Item;
 sub new{
     my $class = shift;
     my $self = {};
-    $self->{STR} = shift;
+    $self->{value} = shift;
     bless $self, $class;
 }
 
 use overload 
-    "0+" => sub { $_[0]->key },
-    "\"\"" => sub { $_[0]->key },
-    "eq" => sub { $_[0]->key eq $_[1] },
-    "*" => sub { ($_[0]->key) * $_[1] },
+    '""'    => sub { $_[0]->{value} },          # stringification
+    "eq"    => sub { $_[0]->{value} eq $_[1] }, # string comparison
     ;
 
-# to be overridden
-sub key{ $_[0]->{STR} }
-sub is_delimiter{ $_[0]->{STR} eq '0' }
+# override to avoid rukes formation across the symbol, 0 by default
+sub is_delimiter{ $_[0]->{value} eq '0' }
 
 package Algorithm::Sequitur;
 

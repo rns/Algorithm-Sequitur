@@ -33,16 +33,15 @@ nine days old.
 some like it hot,
 some like it cold,
 some like it in the pot,
-nine days old.
-},
+nine days old.},
 
 q{Usage    Rule
- 0    R0 -> R1 R2 R3 R4 R3 R5 \n R6 R2 R7 R4 R7 R5 
+ 0    R0 -> R1 R2 R3 R4 R3 R5 \n \n R6 R2 R7 R4 R7 R5 
  2    R1 -> p e a s R8 p o r r i d g R8 
  2    R2 -> h R9 
  2    R3 -> R10 R1 
  2    R4 -> c R11 
- 2    R5 -> R12 _ t h R8 p R9 R10 n R12 R8 d a y s _ R11 . \n 
+ 2    R5 -> R12 _ t h R8 p R9 R10 n R12 R8 d a y s _ R11 . 
  2    R6 -> s o m R8 l i k R8 i t _ 
  2    R7 -> R10 R6 
  6    R8 -> e _ 
