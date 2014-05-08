@@ -1,4 +1,4 @@
-[Sequitur](http://sequitur.info/) is a [linear-time algorithm identifying hierarchical structure in sequences](http://sequitur.info/jair/), for example:
+[Sequitur](http://sequitur.info/) is a [linear-time algorithm identifying hierarchical structure in sequences](http://sequitur.info/jair), for example:
 
 Sequence: 
 
